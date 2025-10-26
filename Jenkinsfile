@@ -12,8 +12,10 @@ pipeline {
         }
 
         stage('Install Dependencies') {
-            steps { bat 'npm ci' }
-        }
+    steps {
+        bat 'npm install'
+    }
+}
 
         stage('Test') {
             steps { echo "No unit tests configured" }
