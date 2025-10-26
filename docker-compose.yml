@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  react-tictactoe:
+    build: .
+    container_name: react-tictactoe
+    ports:
+      - "80:80"
